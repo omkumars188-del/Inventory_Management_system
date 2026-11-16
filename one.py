@@ -18,3 +18,11 @@ def find_item(item_id):
         if item["id"] == item_id:
             return item
     return None
+
+# Return a non-negative whole number or None if invalid.
+def parse_quantity(text):
+    try:
+        value = int(text)
+    except ValueError:
+        return None
+    return value if value >= 0 else None
