@@ -34,3 +34,12 @@ def parse_price(text):
     except ValueError:
         return None
     return value if value >= 0 else None
+
+# Display a list of items in a neat table.
+def print_table(rows):
+    print("-" * 54)
+    print(f"{'ID':<8}{'Name':<20}{'Quantity':>10}{'Price':>14}")
+    print("-" * 54)
+    for item in rows:
+        print(f"{item['id']:<8}{item['name']:<20}{item['quantity']:>10}{item['price']:>14g}")
+    print("-" * 54)
