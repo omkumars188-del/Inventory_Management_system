@@ -26,3 +26,11 @@ def parse_quantity(text):
     except ValueError:
         return None
     return value if value >= 0 else None
+
+# Return a non-negative price  or None if invalid.
+def parse_price(text):
+    try:
+        value = float(text)
+    except ValueError:
+        return None
+    return value if value >= 0 else None
