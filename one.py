@@ -140,3 +140,48 @@ def low_stock_report():
         return
     print(f"Low-stock items (quantity below {LOW_STOCK_LIMIT}):")
     print_table(low)
+
+#    Main menu
+
+
+MENU = """
+ Inventory Management System 
+1. Add item
+2. View items
+3. Update item
+4. Delete item
+5. Total stock value
+6. Low-stock report
+7. Search item
+0. Exit
+"""
+
+
+def main():
+    while True:
+        print(MENU)
+        choice = input("Choose an option: ").strip()
+
+        if choice == "1":
+            add_item()
+        elif choice == "2":
+            view_items()
+        elif choice == "3":
+            update_item()
+        elif choice == "4":
+            delete_item()
+        elif choice == "5":
+            total_stock_value()
+        elif choice == "6":
+            low_stock_report()
+        elif choice == "7":
+            search_item()
+        elif choice == "0":
+            print("Goodbye!")
+            break
+        else:
+            print("Invalid option. Please try again.")
+
+
+if __name__ == "__main__":
+    main()
