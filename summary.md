@@ -33,6 +33,7 @@ This project is a console-based inventory management system. It keeps a list of 
 ## 3. Test Cases and Screenshots
 
 ### Test Case 1:
+<img width="1919" height="1149" alt="Screenshot from 2026-11-17 09-08-26" src="https://github.com/user-attachments/assets/9d7dfe4b-9d53-45b2-b087-35bb40337cea" />
 
 
 
